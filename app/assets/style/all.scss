@@ -1,0 +1,15 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import 'mixin';
+@import 'base';
+@import 'layout/navbar';
+@import 'layout/ad';
+
+@import 'index/banner';
+@import 'index/intro';
+@import 'index/survice';
+@import 'index/subscribe';
+
+@import 'video-list';

@@ -1,0 +1,16 @@
+.ad-Swiper{
+    .ad{
+        height: 100px;
+        width: 100%;
+        object-fit: cover;
+        @include sm{
+            height: 150px;
+        }
+        @include md{
+            height: 200px;
+        }
+        @include xl{
+            height: 250px;
+        }
+    }
+}

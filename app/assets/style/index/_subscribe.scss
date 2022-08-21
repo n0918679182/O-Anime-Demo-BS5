@@ -1,0 +1,45 @@
+.month-bg{
+    background: url('../images/surface-KIDGf43UPOw-unsplash.jpg') 60% 90%;
+    background-size: 230%;
+    height: 240px;
+    @include md{
+        height: 360px;
+    }
+}
+.year-bg{
+    background: url('../images/onur-binay-zEm-VSe2yKY-unsplash.jpg') 44% 50%;
+    background-size: 200%;
+    height: 240px;
+    @include md{
+        height: 360px;
+    }
+}
+.btn-subscribe{
+    background: var(--liner-color);
+    width: 100%;
+    border-radius: 20px;
+    &:hover{
+        background: var(--dark-liner-color);
+    }
+}
+.price-box{
+    overflow: hidden;
+    p{
+        transform: translateY(50px);
+        transition: .3s;
+    }
+}
+.subscribe-hover{
+    .cover{
+        background: rgba(0, 0, 0, 0);
+        transition: .3s;
+    }
+}
+.subscribe-hover:hover{
+    .cover{
+        background: rgba(0, 0, 0, .3);
+    }
+    p{
+        transform: translateY(0);
+    }
+}

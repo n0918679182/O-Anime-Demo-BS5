@@ -1,0 +1,55 @@
+.nav-height{
+    height: 75px;
+}
+
+.user-menu{
+    position: absolute;
+    top: 57px;
+    left: -10px;
+    z-index: 9999;
+    width: 600px;
+    background: rgba(0, 0, 0, .8);
+    a{
+        letter-spacing: 2px;
+    }
+    @include sm{
+        width: 150px;
+        background: var(--main-red);
+        border-radius: 10px 0 10px 10px;
+        top: 50px;
+        right: 40px;
+        left: auto;
+        li:first-child{
+            a{
+                border-radius: 10px 0 0 0;
+            }
+        }
+        a:hover{
+            background: var(--dark-red);
+        }
+    }
+}
+
+.search-form{
+    position: absolute;
+    top: 72px;
+    left: 0;
+}
+
+.login-form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: .3s;
+    font-size: 50px;
+    &:hover{
+        transform: rotate(180deg);
+    }
+}

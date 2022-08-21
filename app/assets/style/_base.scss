@@ -1,0 +1,63 @@
+:root {
+    --liner-color: linear-gradient(135deg, rgba(188, 43, 80, 1) 30%, rgba(130, 84, 235, 1));
+    --dark-liner-color: linear-gradient(135deg, rgb(144, 21, 52) 30%, rgb(85, 46, 176));
+    --main-red:#BC2B50;
+    --dark-red:#8d1331;
+    --light-red:#e65378;
+    --main-purple:#8254EB;
+    --light-purple:#DED9E880;
+}
+.liner-color{
+    @include text-liner(var(--liner-color));
+}
+.icon-hover{
+    @include text-liner(linear-gradient(135deg, rgba(188, 43, 80, 1) 30%, rgba(188, 43, 80, 1)));
+    &:hover{
+        @include text-liner(var(--liner-color));
+    }
+}
+.icon-hover-white{
+    @include text-liner(linear-gradient(135deg, rgb(255, 255, 255) 30%, rgb(255, 255, 255)));
+    &:hover{
+        @include text-liner(var(--liner-color));
+    }
+}
+.fs-80{
+    font-size: 80px;
+}
+.fs-50{
+    font-size: 50px;
+}
+.fs-32{
+    font-size: 24px;
+    @include sm{
+        font-size: 32px;
+    }
+    @include md{
+        font-size: 28px;
+    }
+    @include lg{
+        font-size: 32px;
+    }
+}
+.radius-20{
+    border-radius: 20px;
+}
+.shadow-0-8-8-40{
+    box-shadow: 0 8px 8px rgba(0, 0, 0, .4);
+}
+.obj-fit-cover{
+    object-fit: cover;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.mw-400{
+    max-width: 400px;
+}
+.w-lg-75{
+    @include lg{
+        width: 75% !important;
+    }
+    
+}

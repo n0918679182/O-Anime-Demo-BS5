@@ -1,0 +1,25 @@
+.banner{
+    background-image: url('../images/banner.jpg');
+    background-size: 190%;
+    background-position: 50% 40%;
+    @include sm{
+        background-size: cover;
+        background-position: 0 30%;
+    }
+}
+
+.liner-cover{
+    background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,.8) 60%);
+}
+
+.btn-banner{
+    background: var(--liner-color);
+    width: 200px;
+    border-radius: 20px;
+    &:hover{
+        background: var(--dark-liner-color);
+    }
+    @include md{
+        width: 280px;
+    }
+}
