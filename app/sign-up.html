@@ -1,0 +1,129 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container py-20 mt-20 sign-up text-white">
+    <div class="row justify-content-center">
+        <div class="col-11">
+            <div class="border-start border-3 border-primary ps-8 py-2 mb-10 ms-5">
+                <h2 class="text-primary fw-bold mb-6 fs-1">會員註冊</h2>
+                <p class="text-white">
+                    感謝您註冊 O Anime 影音平台<br />
+                    如果您對平台的功能、介面、介紹有任何疑慮，請隨時與我們聯繫!
+                </p>
+            </div>
+
+            <div class="bg-main-gray p-16 radius-20">
+                <form>
+                    <h3 class="fs-2 fw-bold mb-10 position-relative d-inline-block">基本資料</h3>
+                    <div class="mb-8">
+                        <label for="name" class="form-label fs-4 d-flex align-items-center">姓名 <span
+                                class="text-danger fs-6 ms-3">必填</span></label>
+                        <input type="text" class="form-control bg-main-gray text-white" id="name" placeholder="請輸入您的姓名">
+                    </div>
+                    <div class="mb-8">
+                        <label for="iden" class="form-label fs-4 d-flex align-items-center">身分證字號 <span
+                                class="text-danger fs-6 ms-3">必填</span></label>
+                        <input type="text" class="form-control bg-main-gray text-white" id="iden"
+                            placeholder="請輸入您的身分證字號">
+                    </div>
+                    <div class="mb-8">
+                        <label for="account" class="form-label fs-4 d-flex align-items-center">帳號 <span
+                                class="text-danger fs-6 ms-3">必填</span></label>
+                        <input type="text" class="form-control bg-main-gray text-white" id="account"
+                            placeholder="請輸入您的帳號">
+                    </div>
+                    <div class="mb-8">
+                        <label for="password" class="form-label fs-4 d-flex align-items-center">密碼 <span
+                                class="text-danger fs-6 ms-3">必填</span></label>
+                        <input type="password" class="form-control bg-main-gray text-white" id="password"
+                            placeholder="請輸入您的密碼">
+                    </div>
+                    <div class="mb-8">
+                        <label for="birth" class="form-label fs-4 d-flex align-items-center">生日</label>
+                        <input type="text" class="form-control bg-main-gray text-white form-control" id="birth"
+                            placeholder="請選擇您的出生年月日" name="datepicker">
+                    </div>
+                    <div class="mb-8">
+                        <label for="email" class="form-label fs-4 d-flex align-items-center">信箱 <span
+                                class="text-danger fs-6 ms-3">必填</span></label>
+                        <input type="email" class="form-control bg-main-gray text-white" id="email"
+                            placeholder="請輸入您的信箱">
+                    </div>
+                    <div class="mb-8">
+                        <label for="phone" class="form-label fs-4 d-flex align-items-center">手機 <span
+                                class="text-danger fs-6 ms-3">必填</span></label>
+                        <input type="text" class="form-control bg-main-gray text-white" id="phone"
+                            placeholder="請輸入您的手機">
+                    </div>
+                    <div class="mb-18">
+                        <label for="address" class="form-label fs-4 d-flex align-items-center">住址</label>
+                        <input type="text" class="form-control bg-main-gray text-white" id="address"
+                            placeholder="請輸入您的住址">
+                    </div>
+
+                    <h3 class="fs-2 fw-bold mb-15 position-relative d-inline-block">訂閱資訊</h3>
+                    <div class="mb-20">
+                        <div class="row justify-content-md-center">
+
+                            <div class="col-md-6 col-lg-4 d-none d-md-flex pt-4">
+                                <div class="d-flex flex-column">
+                                    <h4 class="fs-3 mb-8">選擇適合您的方案</h4>
+                                    <p>盡情觀賞。全無廣告。</p>
+                                    <p>可隨時更改方案或取消。</p>
+                                    <p>為您量身打造的推薦片單。</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-5 col-lg-6 col-xl-7 d-flex flex-column justify-content-around">
+                                <label for="month" id="month-label" role="button"
+                                    class="border border-primary d-flex flex-column justify-content-center align-items-center bg-danger position-relative subscribe-hover pt-8">
+                                    O Anime 標準月費
+                                    <div class="p-4 d-flex flex-column flex-lg-row subscribe-detail w-100 justify-content-around align-items-center">
+                                        <div>
+                                            <p class="mb-2 text-center">費用：$200</p>
+                                            <p class="mb-2 text-center">天數：30 天</p>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2 text-center">畫質：基本</p>
+                                            <p class="mb-2 text-center">解析度：1080p</p>
+                                        </div>
+                                    </div>
+                                </label>
+
+                                <label for="year" id="year-label" role="button"
+                                    class="border border-primary d-flex flex-column justify-content-center align-items-center position-relative subscribe-hover pt-8">
+                                    O Anime 超值年費
+                                    <div class="p-4 d-flex flex-column flex-lg-row subscribe-detail w-100 justify-content-around align-items-center">
+                                        <div>
+                                            <p class="mb-2 text-center">費用：$2000</p>
+                                            <p class="mb-2 text-center">天數：365 天</p>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2 text-center">畫質：最佳</p>
+                                            <p class="mb-2 text-center">解析度：4K+HDR</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                
+                            </div>
+                        </div>
+                        <input class="d-none" type="radio" id="month" name="subscribe" checked>
+                        <input class="d-none" type="radio" id="year" name="subscribe">
+                    </div>
+                    <div class="d-flex justify-content-center w-100">
+                        <a href="#" class="btn btn-outline-primary fs-5 px-8">註冊</a>
+                    </div>
+                   
+                    
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>

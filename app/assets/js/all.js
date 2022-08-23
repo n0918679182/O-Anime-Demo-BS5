@@ -62,6 +62,19 @@ $(document).ready(function () {
   $('#close-btn').click(function () {
     $('#login').addClass('d-none');
   });
+
+  $('#month-label').click(function (e) { 
+    e.preventDefault();
+    $(this).addClass('bg-danger');
+    $('#year-label').removeClass('bg-danger');
+    $("input[type=radio]")[0].checked = true;
+  });
+  $('#year-label').click(function (e) { 
+    e.preventDefault();
+    $(this).addClass('bg-danger');
+    $('#month-label').removeClass('bg-danger');
+    $("input[type=radio]")[1].checked = true;
+  });
 });
 
 
@@ -83,3 +96,25 @@ var swiper = new Swiper(".tag-Swiper", {
     clickable: true,
   },
 });
+
+
+// 日曆套件
+(function () {
+  Datepicker.locales['zh-CN'] = {
+    days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+    daysShort: ["日", "一", "二", "三", "四", "五", "六"],
+    daysMin: ["日", "一", "二", "三", "四", "五", "六"],
+    months: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+    monthsShort: ["一月", "二月", "三月", "四月", "五月", "六", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+    today: "Today",
+    clear: "Clear",
+    titleFormat: "y年MM月",
+    format: "yyyy/mm/dd",
+    weekStart: 0
+  }
+})();
+const elem = document.querySelector('input[name="datepicker"]');
+const datepicker = new Datepicker(elem, {
+  autohide:true,
+  language: 'zh-CN',
+}); 

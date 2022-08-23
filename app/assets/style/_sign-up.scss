@@ -1,0 +1,55 @@
+.sign-up {
+    h3::after {
+        content: '';
+        width: 160%;
+        height: 2px;
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        background: var(--liner-color);
+    }
+
+    h3::before {
+        content: '';
+        width: 2px;
+        height: 50px;
+        position: absolute;
+        bottom: -20px;
+        right: -10px;
+        background: var(--liner-color);
+    }
+}
+
+.form-control,
+.form-control:focus {
+    border-color: #FFFFFF;
+    background-color: transparent;
+    color: #C1C1C1;
+}
+.datepicker-cell{
+    color: #000;
+}
+.datepicker-cell:not(.disabled):hover {
+    background-color: #e8e8e8;
+}
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+    background-color: #e8e8e8;
+    color: #000;
+}
+.subscribe-detail{
+    height: 0;
+    transition: .3s;
+    overflow: hidden;
+    transform: translateY(40px);
+}
+.subscribe-hover{
+    overflow: hidden;
+    &:hover{
+        .subscribe-detail{
+            height: 150px;
+            transform: translateY(0);
+        }
+    }
+}
+    
