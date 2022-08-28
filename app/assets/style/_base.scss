@@ -7,6 +7,9 @@
     --main-purple:#8254EB;
     --light-purple:#DED9E880;
 }
+textarea{
+    resize:none;
+}
 .liner-color{
     @include text-liner(var(--liner-color));
 }
@@ -39,6 +42,11 @@
     @include lg{
         font-size: 32px;
     }
+}
+.lh-1-7{
+    line-height: 1.7;
+    letter-spacing: 2px;
+    color: rgb(208, 208, 208);
 }
 .radius-20{
     border-radius: 20px;
