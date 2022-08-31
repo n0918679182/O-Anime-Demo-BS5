@@ -1,7 +1,8 @@
-# 網頁切版直播班 畢業專題 - O Anime ( Bootstrap 版本 )
+# 網頁切版直播班 畢業專題 - O Anime 
 
 >此為六角學院切版班畢業專題，僅為前端作品 並無作為商業利益所用
->[預覽網頁](https://n0918679182.github.io/O-Anime-Demo-BS5/index.html)
+
+[預覽網頁畫面](https://n0918679182.github.io/O-Anime-Demo-BS5/index.html)
 
 ## 資料夾結構
 
