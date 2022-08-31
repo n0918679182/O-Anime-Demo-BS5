@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    Boostrap Index
+    O Anime 影音訂閱平台
   </title>
   <!-- usage -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -35,11 +35,11 @@
       <!-- 會員選單 -->
       <ul class="user-menu list-unstyled pb-6 pb-sm-3" id="user-menu">
         <li><a class="text-white d-flex py-2 ps-13 ps-sm-0 justify-content-sm-center d-flex align-items-center"
-            href="#"><i class='bx bx-user-circle me-3'></i>會員管理</a></li>
+            href="account-manage.html"><i class='bx bx-user-circle me-3'></i>會員管理</a></li>
         <li><a class="text-white d-flex py-2 ps-13 ps-sm-0 justify-content-sm-center d-flex align-items-center"
             href="video-list.html"><i class='bx bx-movie-play me-3'></i>所有動畫</a></li>
         <li><a class="text-white d-flex py-2 ps-13 ps-sm-0 justify-content-sm-center d-flex align-items-center"
-            href="#"><i class='bx bx-heart me-3'></i>我的最愛</a></li>
+            href="video-favorite.html"><i class='bx bx-heart me-3'></i>我的最愛</a></li>
         <li><a class="text-white d-flex py-2 ps-13 ps-sm-0 justify-content-sm-center d-flex align-items-center"
             href="#"><i class='bx bx-mail-send me-3'></i>問題回報</a></li>
         <li><a class="text-white d-flex py-2 ps-13 ps-sm-0 justify-content-sm-center d-flex align-items-center" href="#"
@@ -60,7 +60,7 @@
 
   <!-- 帳號登入 -->
   <div class="login-form w-100 h-100 d-flex align-items-center justify-content-center bg-percent-50" id="login">
-    <form class="bg-percent-80 rounded p-15 position-relative">
+    <form class="bg-percent-80 rounded position-relative login-width">
       <i class='bx bx-x text-white close-btn icon-hover' id="close-btn" role="button"></i>
       <h2 class="text-white fs-1 mb-6">登入</h2>
       <input type="text" placeholder="請輸入帳號" class="w-100" />
@@ -68,8 +68,14 @@
       <input type="password" placeholder="請輸入密碼" class="w-100" />
       <p class="text-primary">密碼錯誤</p>
       <a class="w-100 btn btn-outline-primary mb-4" id="login-btn">登入</a>
-      <a class="text-white btn w-100" href="#">忘記密碼？</a>
-      <a class="text-white btn w-100" href="sign-up.html">註冊</a>
+      <div class="row">
+        <div class="col-6">
+          <a class="btn btn-outline-main-gray text-white w-100 mb-4" href="#">忘記密碼</a>
+        </div>
+        <div class="col-6">
+          <a class="btn btn-outline-main-gray text-white w-100 mb-4" href="sign-up.html">註冊</a>
+        </div>
+      </div>
       <form>
   </div>
 
@@ -134,7 +140,7 @@
 
     <div class="row mb-0 mb-lg-10">
         <div class="col-6 col-md-4 col-lg-3 mb-5 position-relative">
-            <a href="#" class="list-cover"></a>
+            <a href="video-play.html" class="list-cover"></a>
             <iframe class="w-100 rounded-3" src="https://www.youtube.com/embed/ltEWFiLzNvQ" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -177,42 +183,42 @@
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-5 position-relative">
             <a href="#" class="list-cover"></a>
-            <iframe class="w-100" src="https://www.youtube.com/embed/eteox8_Esyw" title="YouTube video player"
+            <iframe class="w-100 rounded-3" src="https://www.youtube.com/embed/eteox8_Esyw" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-5 position-relative">
             <a href="#" class="list-cover"></a>
-            <iframe class="w-100" src="https://www.youtube.com/embed/e3ciHCiNIOw" title="YouTube video player"
+            <iframe class="w-100 rounded-3" src="https://www.youtube.com/embed/e3ciHCiNIOw" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-5 position-relative">
             <a href="#" class="list-cover"></a>
-            <iframe class="w-100" src="https://www.youtube.com/embed/86xuOuxEnhE" title="YouTube video player"
+            <iframe class="w-100 rounded-3" src="https://www.youtube.com/embed/86xuOuxEnhE" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-5 position-relative">
             <a href="#" class="list-cover"></a>
-            <iframe class="w-100" src="https://www.youtube.com/embed/GkDG8DCihCQ" title="YouTube video player"
+            <iframe class="w-100 rounded-3" src="https://www.youtube.com/embed/GkDG8DCihCQ" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-5 position-relative">
             <a href="#" class="list-cover"></a>
-            <iframe class="w-100" src="https://www.youtube.com/embed/Ri36CQZsqxM" title="YouTube video player"
+            <iframe class="w-100 rounded-3" src="https://www.youtube.com/embed/Ri36CQZsqxM" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
         </div>
         <div class="col-6 col-md-4 col-lg-3 mb-5 position-relative">
             <a href="#" class="list-cover"></a>
-            <iframe class="w-100" src="https://www.youtube.com/embed/h6BzNshpnng" title="YouTube video player"
+            <iframe class="w-100 rounded-3" src="https://www.youtube.com/embed/h6BzNshpnng" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
