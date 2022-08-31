@@ -1,0 +1,119 @@
+---
+title: O Anime 影音訂閱平台
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container py-20 mt-20 account-manage text-white">
+
+    <div class="row justify-content-center">
+        <div class="col-11">
+
+            <div class="border-start border-3 border-primary ps-8 py-2 mb-10 ms-5">
+                <h2 class="text-primary fw-bold fs-1">會員管理</h2>
+            </div>
+
+            <div class="bg-main-gray p-16 radius-20">
+                <form>
+                    <h3 class="fs-2 fw-bold mb-10 position-relative d-inline-block">基本資料</h3>
+                    <div class="row mb-18">
+                        <div class="col-12 col-lg-6 mb-6">
+                            <label for="name" class="form-label fs-4 d-flex align-items-center">姓名</label>
+                            <input type="text" class="form-control bg-main-gray text-white placeholder-white" id="name"
+                                placeholder="月見英子">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-6">
+                            <label for="iden" class="form-label fs-4 d-flex align-items-center">身分證字號</label>
+                            <input type="text" class="form-control bg-main-gray text-white" id="iden"
+                                placeholder="A123456789" readonly="true">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-6">
+                            <label for="account" class="form-label fs-4 d-flex align-items-center">帳號</label>
+                            <input type="text" class="form-control bg-main-gray text-white" id="account"
+                                placeholder="AAA123" readonly="true">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-6">
+                            <label for="password" class="form-label fs-4 d-flex align-items-center">密碼</label>
+                            <input type="password" class="form-control bg-main-gray text-white placeholder-white"
+                                id="password" placeholder="******">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-6">
+                            <label for="birth" class="form-label fs-4 d-flex align-items-center">生日</label>
+                            <input type="text"
+                                class="form-control bg-main-gray text-white form-control placeholder-white" id="birth"
+                                placeholder="1993/10/05" name="datepicker">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-6">
+                            <label for="email" class="form-label fs-4 d-flex align-items-center">信箱</label>
+                            <input type="email" class="form-control bg-main-gray text-white placeholder-white"
+                                id="email" placeholder="AAA123@gmail.com">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-6">
+                            <label for="phone" class="form-label fs-4 d-flex align-items-center">手機</label>
+                            <input type="text" class="form-control bg-main-gray text-white placeholder-white" id="phone"
+                                placeholder="0912345678">
+                        </div>
+                        <div class="col-12 col-lg-6 mb-12">
+                            <label for="address" class="form-label fs-4 d-flex align-items-center">住址</label>
+                            <input type="text" class="form-control bg-main-gray text-white placeholder-white"
+                                id="address" placeholder="台北市信義區市府路45號">
+                        </div>
+                        <div class="col-12">
+                            <a href="#" class="btn btn-outline-primary w-100">更新</a>
+                        </div>
+                    </div>
+
+                </form>
+                <h3 class="fs-2 fw-bold mb-15 position-relative d-inline-block">訂閱資訊</h3>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-4 pt-6 mb-8 mb-lg-0">
+                        <p class="liner-border position-relative p-3 text-center">剩餘訂閱日 <span class="mx-3">30</span> 天
+                        </p>
+                        <a href="#" class="btn btn-outline-primary rounded-0 w-100 text-white p-3 mb-4">訂閱 30 日
+                            NT$200</a>
+                        <a href="#" class="btn btn-outline-primary rounded-0 w-100 text-white p-3">訂閱 365 日 NT$2000</a>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <p class="fs-5">訂閱紀錄</p>
+                        <div class="subscribe-table">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">日期</th>
+                                        <th scope="col">天數</th>
+                                        <th scope="col">金額</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022/05/04</td>
+                                        <td>30 天</td>
+                                        <td>NT$200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022/04/03</td>
+                                        <td>30 天</td>
+                                        <td>NT$200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022/03/04</td>
+                                        <td>30 天</td>
+                                        <td>NT$200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2021/03/02</td>
+                                        <td>365 天</td>
+                                        <td>NT$2000</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

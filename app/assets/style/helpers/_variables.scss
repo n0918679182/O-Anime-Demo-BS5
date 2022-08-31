@@ -77,7 +77,8 @@ $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $percent-50:    #0000007f !default;
 $percent-80:    #000000CC !default;
-$main-gray:    #1c1c1c !default;
+$main-gray:     #1c1c1c !default;
+$light-gray:    #353535 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -93,6 +94,7 @@ $theme-colors: (
   "percent-50": $percent-50,
   "percent-80": $percent-80,
   "main-gray":  $main-gray,
+  "light-gray": $light-gray,
 ) !default;
 // scss-docs-end theme-colors-map
 

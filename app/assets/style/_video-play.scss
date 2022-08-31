@@ -1,0 +1,37 @@
+.frame-height{
+    height: 300px;
+    @include md {
+        height: 420px;
+    }
+    @include xl {
+        height: 480px;
+    }
+}
+
+.accordion-button{
+    background: var(--light-red);
+    color: #fff;
+}
+.side-list {
+    height: 500px;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    @include xl {
+        height: 590px;
+    }
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: black;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--main-red);
+    }
+    &-hover{
+        transition: .3s;
+        &:hover{
+            background: #353535;
+        }
+    }
+    
+}

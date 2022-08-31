@@ -42,6 +42,22 @@
     left: 0;
     z-index: 10000;
 }
+.login-width{
+    width: 90%;
+    input{
+        min-width: 250px !important;
+    }
+    @include sm{
+        width: 80%;
+    }
+    @include md{
+        width: 70%;
+    }
+    @include lg{
+        width: auto;
+        padding: 60px 100px;
+    }
+}
 
 .close-btn{
     position: absolute;
