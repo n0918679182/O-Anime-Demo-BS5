@@ -4,7 +4,15 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-
+<script>
+  function setCookie(c_name,value,expiredays){
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate()+expiredays);
+    document.cookie = c_name+"="+escape(value)+((expiredays==null)?"":";expires"+exdate.toGMTString());
+  }
+  setCookie('havelogin',false,1);
+  // alert('init already!');
+</script>
 <!-- banner -->
 <div class="vh-100 banner mb-10">
   <div class="w-100 h-100 liner-cover">

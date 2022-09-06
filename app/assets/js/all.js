@@ -22,13 +22,14 @@ AOS.init({
 });
 
 
+// 將變數存入Cookie
 function setCookie(c_name,value,expiredays){
   var exdate = new Date();
   exdate.setDate(exdate.getDate()+expiredays);
   document.cookie = c_name+"="+escape(value)+((expiredays==null)?"":";expires"+exdate.toGMTString());
 }
-// setCookie('havelogin',false,1);
 
+// 將變數從Cookie取出
 function getCookie(c_name) { 
   if (document.cookie.length > 0){
     let c_start = document.cookie.indexOf(c_name + "=");
@@ -44,12 +45,6 @@ function getCookie(c_name) {
   }
   return "";
 }
-
-// let login = getCookie('havelogin');
-// console.log(login);
-// alert(login);
-
-// alert(getCookie('havelogin'));
 
 
 $(document).ready(function () {
@@ -96,6 +91,7 @@ $(document).ready(function () {
     $('#user-menu').addClass('d-none');
     $('#user-btn').removeClass('bx-menu');
     $('#user-btn').addClass('bxs-user');
+    window.location.href=`index.html`;
   })
 
   $('#search-btn').click(function () {
