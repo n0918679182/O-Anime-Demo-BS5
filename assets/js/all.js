@@ -39,9 +39,8 @@ function setCookie(c_name, value, expiredays) {
   var exdate = new Date();
   exdate.setDate(exdate.getDate() + expiredays);
   document.cookie = c_name + "=" + escape(value) + (expiredays == null ? "" : ";expires" + exdate.toGMTString());
-}
+} // setCookie('havelogin','false',1);
 
-setCookie('havelogin', 'false', 1);
 
 function getCookie(c_name) {
   if (document.cookie.length > 0) {
