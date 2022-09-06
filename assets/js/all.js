@@ -61,11 +61,6 @@ function getCookie(c_name) {
   return "";
 }
 
-function loginInit() {
-  setCookie('havelogin', false, 1);
-} // setCookie('havelogin',false,1);
-
-
 $(document).ready(function () {
   // $('#user-menu').hide();
   // $('#search').hide();
