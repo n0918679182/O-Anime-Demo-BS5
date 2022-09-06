@@ -44,18 +44,20 @@
 }
 .login-width{
     width: 90%;
+    padding: 40px;
     input{
         min-width: 250px !important;
     }
     @include sm{
         width: 80%;
+        padding: 50px 70px;
     }
     @include md{
         width: 70%;
+        padding: 60px 100px;
     }
     @include lg{
         width: auto;
-        padding: 60px 100px;
     }
 }
 
