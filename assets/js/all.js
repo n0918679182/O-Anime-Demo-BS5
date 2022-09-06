@@ -42,9 +42,11 @@ $(document).ready(function () {
   $('#login').addClass('d-none');
   var havelogin = false;
   $('#user-btn').click(function () {
-    if (havelogin === true) {
-      // $('#user-menu').slideToggle();
+    if (havelogin == true) {
+      $('#user-btn').removeClass('bxs-user');
+      $('#user-btn').addClass('bx-menu'); // $('#user-menu').slideToggle();
       // $('#search').slideUp();
+
       $('#user-menu').toggleClass('d-none');
       $('#search').addClass('d-none');
     } else if (havelogin === false) {
@@ -58,6 +60,8 @@ $(document).ready(function () {
   $('#logout').click(function () {
     havelogin = false;
     $('#user-menu').hide();
+    $('#user-btn').removeClass('bx-menu');
+    $('#user-btn').addClass('bxs-user');
   });
   $('#search-btn').click(function () {
     if (havelogin === true) {

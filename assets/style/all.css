@@ -17599,6 +17599,7 @@ textarea {
 
 .login-width {
   width: 90%;
+  padding: 40px;
 }
 
 .login-width input {
@@ -17608,19 +17609,20 @@ textarea {
 @media (min-width: 576px) {
   .login-width {
     width: 80%;
+    padding: 50px 70px;
   }
 }
 
 @media (min-width: 768px) {
   .login-width {
     width: 70%;
+    padding: 60px 100px;
   }
 }
 
 @media (min-width: 992px) {
   .login-width {
     width: auto;
-    padding: 60px 100px;
   }
 }
 
