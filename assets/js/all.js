@@ -33,13 +33,13 @@ AOS.init({
   // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 
-});
+}); // 將變數存入Cookie
 
 function setCookie(c_name, value, expiredays) {
   var exdate = new Date();
   exdate.setDate(exdate.getDate() + expiredays);
   document.cookie = c_name + "=" + escape(value) + (expiredays == null ? "" : ";expires" + exdate.toGMTString());
-} // setCookie('havelogin','false',1);
+} // 將變數從Cookie取出
 
 
 function getCookie(c_name) {
@@ -101,6 +101,7 @@ $(document).ready(function () {
     $('#user-menu').addClass('d-none');
     $('#user-btn').removeClass('bx-menu');
     $('#user-btn').addClass('bxs-user');
+    window.location.href = "index.html";
   });
   $('#search-btn').click(function () {
     if (getCookie('havelogin') === 'true') {
