@@ -61,6 +61,7 @@ function getCookie(c_name) {
   return "";
 }
 
+setCookie('havelogin', false, 1);
 $(document).ready(function () {
   // $('#user-menu').hide();
   // $('#search').hide();
