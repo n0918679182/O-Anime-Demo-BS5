@@ -114,6 +114,11 @@ $(document).ready(function () {
       $('#login').removeClass('d-none');
     }
   });
+  $('#signUpBTN').click(function (e) {
+    e.preventDefault();
+    setCookie('havelogin', true, 1);
+    window.location.href = "video-list.html";
+  });
   $('#close-btn').click(function () {
     $('#login').addClass('d-none');
   });

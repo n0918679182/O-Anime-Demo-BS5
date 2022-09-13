@@ -18181,12 +18181,18 @@ textarea {
 
 .sign-up h3::after, .sign-up .h3::after {
   content: '';
-  width: 160%;
+  width: 130%;
   height: 2px;
   position: absolute;
   bottom: -10px;
   left: -10px;
   background: var(--liner-color);
+}
+
+@media (min-width: 768px) {
+  .sign-up h3::after, .sign-up .h3::after {
+    width: 160%;
+  }
 }
 
 .sign-up h3::before, .sign-up .h3::before {
