@@ -1,7 +1,10 @@
 .sign-up {
     h3::after {
         content: '';
-        width: 160%;
+        width: 130%;
+        @include md {
+            width: 160%;
+        }
         height: 2px;
         position: absolute;
         bottom: -10px;
